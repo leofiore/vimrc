@@ -84,8 +84,8 @@ Colorschemes
 * wombat256mod
 * xoria256
 
-![Screenshot](sshot1.png)
-![Screenshot](sshot2.png)
+![Screenshot](https://raw.github.com/leofiore/vimrc/master/sshot1.png)
+![Screenshot](https://raw.github.com/leofiore/vimrc/master/sshot2.png)
 
 
 Usage

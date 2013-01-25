@@ -116,4 +116,7 @@ let g:neocomplcache_enable_at_startup = 1
 
 let g:Tlist_Use_Right_Window = 1
 
+" no matter your colorscheme, you'll have a vertical bar when you split.
+hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#555552 guibg=#555552 gui=NONE
+set fillchars+=vert:\ 
 ""au FileType javascript call JavaScriptFold()
