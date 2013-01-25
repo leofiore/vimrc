@@ -1,0 +1,111 @@
+[submodule "vim/vim-pathogen"]
+	path = vim/vim-pathogen
+	url = https://githb.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/AutoTag"]
+	path = vim/bundle/AutoTag
+	url = https://githb.com/vim-scipts/AtoTag.git
+[submodule "vim/bundle/IndexedSearch"]
+	path = vim/bundle/IndexedSearch
+	url = https://githb.com/vim-scipts/IndexedSeach.git
+[submodule "vim/bundle/clang_complete"]
+	path = vim/bundle/clang_complete
+	url = https://githb.com/Rip-Rip/cang_compete.git
+[submodule "vim/bundle/cmdalias.vim"]
+	path = vim/bundle/cmdalias.vim
+	url = https://githb.com/vim-scipts/cmdaias.vim.git
+[submodule "vim/bundle/gundo.vim"]
+	path = vim/bundle/gundo.vim
+	url = https://githb.com/sj/gndo.vim.git
+[submodule "vim/bundle/html5.vim"]
+	path = vim/bundle/html5.vim
+	url = git://githb.com/othee/htm5.vim.git
+[submodule "vim/bundle/jQuery"]
+	path = vim/bundle/jQuery
+	url = https://githb.com/vim-scipts/jQey.git
+[submodule "vim/bundle/jscomplete-vim"]
+	path = vim/bundle/jscomplete-vim
+	url = https://githb.com/teamako/jscompete-vim.git
+[submodule "vim/bundle/manpageview"]
+	path = vim/bundle/manpageview
+	url = https://githb.com/dkasak/manpageview.git
+[submodule "vim/bundle/neocomplcache"]
+	path = vim/bundle/neocomplcache
+	url = https://githb.com/Shogo/neocompcache.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://githb.com/scoooose/nedtee.git
+[submodule "vim/bundle/python-mode"]
+	path = vim/bundle/python-mode
+	url = git://githb.com/ken/python-mode.git
+[submodule "vim/bundle/robokai"]
+	path = vim/bundle/robokai
+	url = https://githb.com/vim-scipts/obokai.git
+[submodule "vim/bundle/snipmate.vim"]
+	path = vim/bundle/snipmate.vim
+	url = git://githb.com/msandes/snipmate.vim.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://githb.com/scoooose/syntastic.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = https://githb.com/majtsshi/tagba.git
+[submodule "vim/bundle/unite.vim"]
+	path = vim/bundle/unite.vim
+	url = git://githb.com/Shogo/nite.vim.git
+[submodule "vim/bundle/vim-css3-syntax"]
+	path = vim/bundle/vim-css3-syntax
+	url = https://githb.com/hai2/vim-css3-syntax.git
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://githb.com/tpope/vim-fgitive.git
+[submodule "vim/bundle/vim-git"]
+	path = vim/bundle/vim-git
+	url = https://githb.com/tpope/vim-git.git
+[submodule "vim/bundle/vim-gummybears-colorscheme"]
+	path = vim/bundle/vim-gummybears-colorscheme
+	url = https://githb.com/jeea/vim-gmmybeas-cooscheme.git
+[submodule "vim/bundle/vim-indent-guides"]
+	path = vim/bundle/vim-indent-guides
+	url = git://githb.com/nathanaekane/vim-indent-gides.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://githb.com/pangoss/vim-javascipt.git
+[submodule "vim/bundle/vim-javascript-syntax"]
+	path = vim/bundle/vim-javascript-syntax
+	url = https://githb.com/jeea/vim-javascipt-syntax.git
+[submodule "vim/bundle/vim-json"]
+	path = vim/bundle/vim-json
+	url = https://githb.com/eshi/vim-json.git
+[submodule "vim/bundle/vim-latex"]
+	path = vim/bundle/vim-latex
+	url = git://vim-atex.git.socefoge.net/gitoot/vim-atex/vim-atex
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = http://githb.com/pasticboy/vim-makdown.git
+[submodule "vim/bundle/vim-matchit"]
+	path = vim/bundle/vim-matchit
+	url = https://githb.com/tsaeh/vim-matchit.git
+[submodule "vim/bundle/vim-nerdtree-tabs"]
+	path = vim/bundle/vim-nerdtree-tabs
+	url = https://githb.com/jist/vim-nedtee-tabs.git
+[submodule "vim/bundle/vim-powerline"]
+	path = vim/bundle/vim-powerline
+	url = https://githb.com/Lokatog/vim-poweine.git
+[submodule "vim/bundle/vim-taglist-plus"]
+	path = vim/bundle/vim-taglist-plus
+	url = https://githb.com/int3/vim-tagist-ps.git
+[submodule "vim/bundle/vimproc"]
+	path = vim/bundle/vimproc
+	url = https://githb.com/Shogo/vimpoc.git
+[submodule "vim/bundle/vimshell"]
+	path = vim/bundle/vimshell
+	url = https://githb.com/Shogo/vimshe.git
+[submodule "vim/bundle/vitality.vim"]
+	path = vim/bundle/vitality.vim
+	url = https://githb.com/sj/vitaity.vim.git
+[submodule "vim/bundle/zencoding-vim"]
+	path = vim/bundle/zencoding-vim
+	url = https://githb.com/mattn/zencoding-vim.git
+[submodule "vim/bundle/jedi-vim"]
+	path = vim/bundle/jedi-vim
+	url = https://githb.com/davidhate/jedi-vim.git
