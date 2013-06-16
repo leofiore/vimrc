@@ -20,7 +20,10 @@ colorscheme molokai
 set wildmode=longest:full
 set wildmenu
 
-set foldlevel=3
+set foldmethod=indent
+set foldlevel=10
+set foldlevelstart=20
+set foldnestmax=2
 
 call pathogen#infect()
 filetype on
