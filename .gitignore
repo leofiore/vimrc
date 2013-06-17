@@ -3,3 +3,12 @@
 .DS_Store
 .VimballRecord
 .netrwhist
+
+/tmp/undo/*
+!/tmp/undo/.keep
+
+/tmp/swap/*
+!/tmp/swap/.keep
+
+/tmp/backup/*
+!/tmp/backup/.keep

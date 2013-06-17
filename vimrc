@@ -5,6 +5,7 @@ set termencoding=utf-8
 set smarttab
 set ts=4
 set shiftwidth=4
+set shiftround
 set number
 set bs=2 "for macports vim
 set t_Co=256
@@ -15,6 +16,14 @@ set nocompatible
 set ttimeout
 set ttimeoutlen=10
 set ttyfast
+set directory=~/.vim/tmp/swap
+set backupdir=~/.vim/tmp/backup
+set undodir=~/.vim/tmp/undo
+set backup
+set undofile
+set undolevels=1000
+set undoreload=10000
+set hidden
 colorscheme molokai
 
 set wildmode=longest:full
@@ -131,4 +140,4 @@ set fillchars+=vert:\
 let g:gitgutter_eager = 0
 au VimEnter * GitGutterEnable
 
-let g:clang_exec = "/opt/local//etc/select/clang"
+let g:clang_exec = "/opt/local/etc/select/clang"
