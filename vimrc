@@ -122,4 +122,7 @@ let g:Tlist_Use_Right_Window = 1
 " no matter your colorscheme, you'll have a vertical bar when you split.
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#555552 guibg=#555552 gui=NONE
 set fillchars+=vert:\ 
+
+let g:gitgutter_eager = 0
+
 ""au FileType javascript call JavaScriptFold()
