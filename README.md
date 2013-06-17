@@ -56,6 +56,7 @@ UI packages
 * vitality.vim
 * vim-indent-guides
 * zencoding-vim
+* startify
 
 Development
 -----------
