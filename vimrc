@@ -25,6 +25,8 @@ set foldlevel=10
 set foldlevelstart=20
 set foldnestmax=2
 
+set nowrap
+
 call pathogen#infect()
 filetype on
 filetype plugin on
@@ -66,6 +68,7 @@ set laststatus=2
 " program to always generate a file-name.
 set grepprg=grep\ -nH\ $*
 
+" vim-latex
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
@@ -74,6 +77,7 @@ let g:Tex_ViewRule_pdf='/usr/bin/open -a Preview'
 
 let g:tagbar_autofocus = 1
 
+"Share code on sprunge
 command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http://sprunge.us | head -n 1 | tr -d '\r\n ' | pbcopy
 "command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http://sprunge.us | head -n 1 | tr -d '\r\n ' | DISPLAY=:0.0 xclip
 
@@ -113,7 +117,7 @@ let g:jscomplete_use = ['dom', 'moz', 'xpcom', 'es6th']
 autocmd InsertLeave * set nocursorline
 autocmd InsertEnter * set cursorline
 
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.so$', '\.o$', '\.la$', '\.a$', '\.class$', '\~$', '\.beam$', '^Mnesia.', 'deps/', '\.hi$', 'vendor/']
 
 let g:neocomplcache_enable_at_startup = 1
 
@@ -123,6 +127,8 @@ let g:Tlist_Use_Right_Window = 1
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#555552 guibg=#555552 gui=NONE
 set fillchars+=vert:\ 
 
+"GitGutter
 let g:gitgutter_eager = 0
+au VimEnter * GitGutterEnable
 
-""au FileType javascript call JavaScriptFold()
+let g:clang_exec = "/opt/local//etc/select/clang"
