@@ -12,3 +12,5 @@
 
 /tmp/backup/*
 !/tmp/backup/.keep
+
+doc/

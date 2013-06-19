@@ -141,3 +141,18 @@ let g:gitgutter_eager = 0
 au VimEnter * GitGutterEnable
 
 let g:clang_exec = "/opt/local/etc/select/clang"
+
+"python-mode
+let g:pymode_rope_vim_completion=0
+"jedi-vim
+let g:jedi#popup_select_first = 0
+
+"Startify
+let g:startify_skiplist = [
+             \ 'COMMIT_EDITMSG',
+             \ $VIMRUNTIME .'/doc',
+             \ 'bundle/.*/doc' ,
+             \ 'vimpager'
+             \ ]
+let g:startify_show_sessions = 1
+let g:startify_show_files = 1
