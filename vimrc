@@ -2,6 +2,7 @@ syntax on
 set incsearch
 set expandtab
 set termencoding=utf-8
+set encoding=utf-8
 set smarttab
 set ts=4
 set shiftwidth=4
