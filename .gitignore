@@ -4,14 +4,14 @@
 .VimballRecord
 .netrwhist
 
-/tmp/undo/*
-!/tmp/undo/.keep
+vim/tmp/undo/*
+!vim/tmp/undo/.keep
 
-/tmp/swap/*
-!/tmp/swap/.keep
+vim/tmp/swap/*
+!vim/tmp/swap/.keep
 
-/tmp/backup/*
-!/tmp/backup/.keep
+vim/tmp/backup/*
+!vim/tmp/backup/.keep
 
 doc/.*
 doc/tags
