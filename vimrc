@@ -137,6 +137,13 @@ let g:Tlist_Use_Right_Window = 1
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#555552 guibg=#555552 gui=NONE
 set fillchars+=vert:\ 
 
+
+"highlight column 80
+hi ColorColumn ctermbg=234 ctermfg=Gray guibg=#404040
+command SkinnyMargin set cc=73
+command WideMargin set cc=80
+command NoMargin set cc=
+
 "GitGutter
 let g:gitgutter_eager = 0
 au VimEnter * GitGutterEnable

@@ -13,4 +13,5 @@
 /tmp/backup/*
 !/tmp/backup/.keep
 
-doc/
+doc/.*
+doc/tags
