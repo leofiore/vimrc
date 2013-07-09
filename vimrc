@@ -91,6 +91,17 @@ let g:tagbar_autofocus = 1
 command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http://sprunge.us | head -n 1 | tr -d '\r\n ' | pbcopy
 "command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http://sprunge.us | head -n 1 | tr -d '\r\n ' | DISPLAY=:0.0 xclip
 
+"Generate .gitignore via gitignore.io
+function CallGitignore(langs)
+    if a:langs == "list"
+        echo system("curl -s http://gitignore.io/api/list")
+    else
+        botright :new
+        execute ':silent read !curl -s http://gitignore.io/api/' . a:langs
+    endif
+endfunction
+command -nargs=1 Ignorify call CallGitignore(<f-args>)
+
 function CallVimShell()
     botright :15split
     VimShell
