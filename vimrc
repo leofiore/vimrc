@@ -110,17 +110,16 @@ function! DoAliases()
 endfunction
 
 
-if has("autocmd")
-    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-    autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-    autocmd FileType c set omnifunc=ccomplete#Complete
-    autocmd FileType java set omnifunc=javacomplete#Complete
-    autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-endif
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType python let b:did_ftplugin = 1
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType java set omnifunc=javacomplete#Complete
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 let g:jscomplete_use = ['dom', 'moz', 'xpcom', 'es6th']
 
@@ -130,6 +129,17 @@ autocmd InsertEnter * set cursorline
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.so$', '\.o$', '\.la$', '\.a$', '\.class$', '\~$', '\.beam$', '^Mnesia.', 'deps/', '\.hi$', 'vendor/']
 
 let g:neocomplcache_enable_at_startup = 1
+if !exists('g:neocomplcache_omni_functions')
+    let g:neocomplcache_omni_functions = {}
+endif
+if !exists('g:neocomplcache_force_omni_patterns')
+    let g:neocomplcache_force_omni_patterns = {}
+endif
+let g:neocomplcache_force_overwrite_completefunc = 1
+let g:neocomplcache_omni_functions['python'] = 'jedi#complete'
+let g:neocomplcache_force_omni_patterns.python = '[^. \t]\.\w*'
+set ofu=syntaxcomplete#Complete
+
 
 let g:Tlist_Use_Right_Window = 1
 
@@ -148,13 +158,17 @@ command NoMargin set cc=
 let g:gitgutter_eager = 0
 au VimEnter * GitGutterEnable
 
-let g:clang_exec = "/opt/local/etc/select/clang"
+let g:clang_exec = "/opt/local/bin/clang"
+let g:clang_library_path = "/opt/local/libexec/llvm-3.2/lib/"
 
 "python-mode
-let g:pymode_rope_vim_completion=0
+let g:pymode_rope_vim_completion = 0
+let g:pymode_rope_guess_project = 0
+let g:pymode_virtualenv = 1
 "jedi-vim
 let g:jedi#popup_select_first = 0
-
+let g:jedi#popup_on_dot = 0
+"
 "Startify
 let g:startify_skiplist = [
              \ 'COMMIT_EDITMSG',
