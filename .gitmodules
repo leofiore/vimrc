@@ -22,9 +22,6 @@
 [submodule "vim/bundle/jQuery"]
 	path = vim/bundle/jQuery
 	url = git://github.com/vim-scripts/jQuery.git
-[submodule "vim/bundle/jscomplete-vim"]
-	path = vim/bundle/jscomplete-vim
-	url = git://github.com/teramako/jscomplete-vim.git
 [submodule "vim/bundle/manpageview"]
 	path = vim/bundle/manpageview
 	url = git://github.com/dkasak/manpageview.git
