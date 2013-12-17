@@ -58,12 +58,6 @@
 [submodule "vim/bundle/vim-git"]
 	path = vim/bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
-[submodule "vim/bundle/vim-gummybears-colorscheme"]
-	path = vim/bundle/vim-gummybears-colorscheme
-	url = git://github.com/jelera/vim-gummybears-colorscheme.git
-[submodule "vim/bundle/vim-indent-guides"]
-	path = vim/bundle/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
@@ -100,9 +94,6 @@
 [submodule "vim/bundle/vitality.vim"]
 	path = vim/bundle/vitality.vim
 	url = git://github.com/sjl/vitality.vim.git
-[submodule "vim/bundle/zencoding-vim"]
-	path = vim/bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "vim/bundle/jedi-vim"]
 	path = vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
