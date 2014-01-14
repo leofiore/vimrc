@@ -94,7 +94,7 @@ command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http
 "Generate .gitignore via gitignore.io
 function CallGitignore(langs)
     if a:langs == "list"
-        echo system("curl -s http://gitignore.io/api/list")
+        echo system("curl -s http://www.gitignore.io/api/list")
     else
         botright :new
         execute ':silent read !curl -s http://gitignore.io/api/' . a:langs
