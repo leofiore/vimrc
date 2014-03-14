@@ -75,7 +75,7 @@
 	url = git://github.com/plasticboy/vim-markdown.git
 [submodule "vim/bundle/vim-matchit"]
 	path = vim/bundle/vim-matchit
-	url = git://github.com/tsaleh/vim-matchit.git
+	url = git://github.com/vim-scripts/matchit.zip
 [submodule "vim/bundle/vim-nerdtree-tabs"]
 	path = vim/bundle/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
