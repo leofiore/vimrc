@@ -97,7 +97,7 @@ function CallGitignore(langs)
         echo system("curl -s http://www.gitignore.io/api/list")
     else
         botright :new
-        execute ':silent read !curl -s http://gitignore.io/api/' . a:langs
+        execute ':silent read !curl -s http://www.gitignore.io/api/' . a:langs
     endif
 endfunction
 command -nargs=1 Ignorify call CallGitignore(<f-args>)
@@ -170,7 +170,7 @@ let g:gitgutter_eager = 0
 au VimEnter * GitGutterEnable
 
 let g:clang_exec = "/opt/local/bin/clang"
-let g:clang_library_path = "/opt/local/libexec/llvm-3.2/lib/"
+let g:clang_library_path = "/opt/local/libexec/llvm-3.5/lib"
 
 "python-mode
 let g:pymode_rope_vim_completion = 0
@@ -189,3 +189,6 @@ let g:startify_skiplist = [
              \ ]
 let g:startify_show_sessions = 1
 let g:startify_show_files = 1
+
+
+runtime! macros/matchit.vim
