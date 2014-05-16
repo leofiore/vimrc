@@ -147,7 +147,6 @@ if !exists('g:neocomplcache_force_omni_patterns')
     let g:neocomplcache_force_omni_patterns = {}
 endif
 let g:neocomplcache_force_overwrite_completefunc = 1
-let g:neocomplcache_omni_functions['python'] = 'jedi#complete'
 let g:neocomplcache_force_omni_patterns.python = '[^. \t]\.\w*'
 set ofu=syntaxcomplete#Complete
 
@@ -179,7 +178,7 @@ let g:pymode_virtualenv = 1
 "jedi-vim
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 0
-"
+let g:jedi#use_splits_not_buffers = "left"
 "Startify
 let g:startify_skiplist = [
              \ 'COMMIT_EDITMSG',
