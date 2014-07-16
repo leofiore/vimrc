@@ -69,8 +69,9 @@ let g:syntastic_style_warning_symbol = '⚠'
 let c_no_curly_error   = 1
 let g:localrc_filename = '.lvimrc'
 
-" Powerline
-let g:Powerline_symbols = 'fancy'
+" airline 
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
 set laststatus=2
 
 " IMPORTANT: grep will sometimes skip displaying the file name if you
@@ -164,16 +165,15 @@ command SkinnyMargin set cc=73
 command WideMargin set cc=80
 command NoMargin set cc=
 
-"GitGutter
-let g:gitgutter_eager = 0
-au VimEnter * GitGutterEnable
-
 let g:clang_exec = "/opt/local/bin/clang"
 let g:clang_library_path = "/opt/local/libexec/llvm-3.5/lib"
 
 "python-mode
+let g:pymode_rope=0
 let g:pymode_rope_vim_completion = 0
+let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_guess_project = 0
+let g:pymode_rope_lookup_project = 0
 let g:pymode_virtualenv = 1
 "jedi-vim
 let g:jedi#popup_select_first = 0
