@@ -95,10 +95,10 @@ command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http
 "Generate .gitignore via gitignore.io
 function CallGitignore(langs)
     if a:langs == "list"
-        echo system("curl -s http://www.gitignore.io/api/list")
+        echo system("curl -s https://www.gitignore.io/api/list")
     else
         botright :new
-        execute ':silent read !curl -s http://www.gitignore.io/api/' . a:langs
+        execute ':silent read !curl -s https://www.gitignore.io/api/' . a:langs
     endif
 endfunction
 command -nargs=1 Ignorify call CallGitignore(<f-args>)
@@ -123,7 +123,8 @@ endfunction
 
 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType python let b:did_ftplugin = 1
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
@@ -165,16 +166,20 @@ command SkinnyMargin set cc=73
 command WideMargin set cc=80
 command NoMargin set cc=
 
-let g:clang_exec = "/opt/local/bin/clang"
+"let g:clang_exec = "/opt/local/bin/clang"
+"let g:clang_library_path = "/opt/local/libexec/llvm-3.5/lib"
+let g:clang_exec = "/opt/bin/clang"
 let g:clang_library_path = "/opt/local/libexec/llvm-3.5/lib"
 
 "python-mode
 let g:pymode_rope=0
+let g:pymode_rope_completion = 0
 let g:pymode_rope_vim_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_guess_project = 0
 let g:pymode_rope_lookup_project = 0
 let g:pymode_virtualenv = 1
+let g:pymode_lint_checkers = ['pyflakes', 'pep8']
 "jedi-vim
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 0
