@@ -91,6 +91,7 @@ let g:tagbar_autofocus = 1
 "Share code on sprunge
 command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http://sprunge.us | head -n 1 | tr -d '\r\n ' | pbcopy
 "command -range=% Share silent <line1>,<line2>write !curl -s -F "sprunge=<-" http://sprunge.us | head -n 1 | tr -d '\r\n ' | DISPLAY=:0.0 xclip
+command -range=% Haste silent <line1>,<line2>write !curl -s -XPOST http://hastebin.com/documents --data-binary @- | cut -d : -f 2 | tr -d \"\} | xargs echo http://hastebin.com/ | tr -d " " | pbcopy
 
 "Generate .gitignore via gitignore.io
 function CallGitignore(langs)
@@ -180,6 +181,9 @@ let g:pymode_rope_guess_project = 0
 let g:pymode_rope_lookup_project = 0
 let g:pymode_virtualenv = 1
 let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+"move the buffer on the far right (as seen on
+"http://stackoverflow.com/questions/28057115/vim-python-mode-vertical-windows)
+autocmd BufEnter __run__,__doc__ :wincmd L
 "jedi-vim
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 0
