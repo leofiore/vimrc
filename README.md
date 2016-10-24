@@ -113,8 +113,8 @@ Colorschemes
 * wombat256mod
 * xoria256
 
-![Screenshot](https://raw.github.com/leofiore/vimrc/master/sshot1.png)
-![Screenshot](https://raw.github.com/leofiore/vimrc/master/sshot2.png)
+![Screenshot](https://raw.githubusercontent.com/leofiore/vimrc/master/sshot1.png)
+![Screenshot](https://raw.githubusercontent.com/leofiore/vimrc/master/sshot1.png)
 
 Known bugs
 ----------
