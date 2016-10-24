@@ -69,7 +69,7 @@
 	url = git://github.com/leshill/vim-json.git
 [submodule "vim/bundle/vim-latex"]
 	path = vim/bundle/vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+	url = git://github.com/vim-latex/vim-latex.git 
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
@@ -118,3 +118,6 @@
 [submodule "vim/bundle/vim-signify"]
 	path = vim/bundle/vim-signify
 	url = git://github.com/mhinz/vim-signify.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = git://github.com/vim-airline/vim-airline-themes.git
