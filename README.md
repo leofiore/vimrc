@@ -114,7 +114,7 @@ Colorschemes
 * xoria256
 
 ![Screenshot](https://raw.githubusercontent.com/leofiore/vimrc/master/sshot1.png)
-![Screenshot](https://raw.githubusercontent.com/leofiore/vimrc/master/sshot1.png)
+![Screenshot](https://raw.githubusercontent.com/leofiore/vimrc/master/sshot2.png)
 
 Known bugs
 ----------
